@@ -1,0 +1,19 @@
+Simple Fehlerbeschreibung
+
+Zeile 12
+buf array ist lokale variable ,welche nach funktionsaufruf wieder gefreed wird
+
+Zeile 19 
+allokiertes array ist zu klein, da es nur 4 statt der mindestens benoetigten 8 byte hat (char = 1byte, int = 4byte)
+
+Zeile 20
+da in der main ueber den dereferenzierten adresszeiger auf das erste element (?!) zugegriffen wird, muss dieses auch mit dem passenden wert initialisiert werden
+
+Zeile 29 
+fehler im funktionsaufruf um das buf array zu allokieren
+
+Zeile 39
+free bevor returned wird eher suboptimal
+
+Zeile 56 
+fehlende free anweisungen
