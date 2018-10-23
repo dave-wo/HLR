@@ -1,4 +1,4 @@
-/*
+/*gittest
 ** simple error demonstration to demonstrate power of valgrind
 ** Julian M. Kunkel - 17.04.2008
 */
